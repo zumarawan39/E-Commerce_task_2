@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+    background-color: #242582;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+.img_logo{
+    width: 50px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+        body {
+            
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            width: 30%;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background: #001f54;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background: #0054f1;
+        }
+        .container a {
+            display: block;
+            margin-top: 10px;
+            color: #0054f1;
+            text-decoration: none;
+        }
+        .page-footer {
+    background-color: #242582;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-title {
+    margin-top: 0;
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 1.2em;
+}
+
+.footer-text {
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 0.9em;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'bahnschrift', sans-serif;
+}
+
+.footer-link:hover {
+    color: #f1f1f1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+}
+.left_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left_nav">
+                <div class="img_logo"><img src="./images/images01.png" alt=""></div>
+                <div class="logo">E-Commerce Store</div>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Products</a></li>
+                <li><a href="./addtocard.html">Cart</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./register.html" class="register-btn">Register</a></li>
+                <li><a href="./login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="./images/images1.png" alt="Logo">
+        <h1>REGISTER</h1>
+        <p>Register Yourself</p>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <button>Register</button>
+        <a href="./login.html">Have an Account? Login</a>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h5 class="footer-title">E-Commerce Store</h5>
+                <p class="footer-text">At Our Ecommerce Store, we are passionate about providing exceptional products and an unparalleled shopping experience. We strive to offer a curated selection of high-quality items that meet the diverse needs and tastes of our valued customers.</p>
+            </div>
+            <div class="footer-column">
+                <h5 class="footer-title">Links</h5>
+                <ul class="footer-list">
+                    <li><a href="./index.html" class="footer-link">Home</a></li>
+                    <li><a href="login.html" class="footer-link">Products</a></li>
+                    <li><a href="./addtocard.html" class="footer-link">Cart</a></li>
+                    <li><a href="./contactus.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5 class="footer-title">Social</h5>
+                <ul class="footer-list social-links">
+                    <li><a href="#!" class="footer-link">Facebook</a></li>
+                    <li><a href="#!" class="footer-link">Instagram</a></li>
+                    <li><a href="#!" class="footer-link">Twitter</a></li>
+                    <li><a href="#!" class="footer-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2020 <a href="/" class="footer-link">ecommerce-store.com</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

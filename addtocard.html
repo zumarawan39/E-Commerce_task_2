@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+
+        }
+        .container img {
+            width: 100px;
+            float: left;
+            margin-right: 20px;
+        }
+        .container table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .container table, .container th, .container td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+        .container .buttons {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .container .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .container .buttons .continue {
+            background: #f0f0f0;
+            color: #333;
+        }
+        .container .buttons .continue:hover {
+            background: #ddd;
+        }
+        .container .buttons .add-to-cart {
+            background: #ff6600;
+            color: white;
+        }
+        .container .buttons .add-to-cart:hover {
+            background: #e65c00;
+        }
+        header {
+    background-color: #242582;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+.img_logo{
+    width: 50px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.left_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-footer {
+    background-color: #242582;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-title {
+    margin-top: 0;
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 1.2em;
+}
+
+.footer-text {
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 0.9em;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'bahnschrift', sans-serif;
+}
+
+.footer-link:hover {
+    color: #f1f1f1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left_nav">
+                <div class="img_logo"><img src="./images/images01.png" alt=""></div>
+                <div class="logo">E-Commerce Store</div>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Products</a></li>
+                <li><a href="./addtocard.html">Cart</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./register.html" class="register-btn">Register</a></li>
+                <li><a href="./login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Your Add to Cart</h1>
+        <img src="./images/images09.png" alt="Iphone">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Iphone</td>
+                <td>Red</td>
+                <td>1</td>
+                <td>350,999 Rs</td>
+                <td>350,999 Rs</td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button class="continue">Continue shopping</button>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h5 class="footer-title">E-Commerce Store</h5>
+                <p class="footer-text">At Our Ecommerce Store, we are passionate about providing exceptional products and an unparalleled shopping experience. We strive to offer a curated selection of high-quality items that meet the diverse needs and tastes of our valued customers.</p>
+            </div>
+            <div class="footer-column">
+                <h5 class="footer-title">Links</h5>
+                <ul class="footer-list">
+                    <li><a href="./index.html" class="footer-link">Home</a></li>
+                    <li><a href="./index.html" class="footer-link">Products</a></li>
+                    <li><a href="./addtocard.html" class="footer-link">Cart</a></li>
+                    <li><a href="./contactus.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5 class="footer-title">Social</h5>
+                <ul class="footer-list social-links">
+                    <li><a href="#!" class="footer-link">Facebook</a></li>
+                    <li><a href="#!" class="footer-link">Instagram</a></li>
+                    <li><a href="#!" class="footer-link">Twitter</a></li>
+                    <li><a href="#!" class="footer-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2020 <a href="/" class="footer-link">ecommerce-store.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
